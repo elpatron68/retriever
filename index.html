@@ -42,9 +42,9 @@
             <a href="index.html"><img src="img/logo.png" alt="Retriever Logo" style="height: 80px; margin-right: 15px;"></a>
         </h1>
         <h1 >Retriever</h1>
-        <h3>Secure Secrets Retrieval</h3>
+        <h3>Sicheres Abrufen von Geheimnissen</h3>
         <br>
-        <p class="lead mb-4">Retriever lets you request secrets from anyone <br> without any of the data going to a server.</p>
+        <p class="lead mb-4">Mit Retriever können Sie Geheimnisse von jedermann <br> abfragen, ohne dass die Daten an einen Server übermittelt werden.</p>
         <div class="col-lg-6 mx-auto">
 
         <div class="card p-3">
@@ -52,18 +52,18 @@
     
     
                 <div v-if="newSecret">
-                    <p class="lead mb-4">Share this URL to get a secret.</p>
+                    <p class="lead mb-4">Teilen Sie diese URL, um ein Geheimnis zu empfangen.</p>
                     <urlcopy :url="url"/>
                     
                 </div>
                 <div v-else-if="decryptSecret">
-                    <p class="lead mb-4" style="font-size: 16px; color: #777;">Below is the decrypted secret shared with you.</p>
+                    <p class="lead mb-4" style="font-size: 16px; color: #777;">Unten finden Sie das entschlüsselte Geheimnis, das wir Ihnen mitgeteilt haben.</p>
                     <textarea class="form-control" id="dataForDecryption" rows="5"
                               v-model="inputData" disabled style="border-radius: 5px;"></textarea>
                 </div>
                 <div v-else>
-                    <p class="lead mb-4">Somebody is requesting a secret</br>
-                        <small> No one except for the requester will see this information.</small>
+                    <p class="lead mb-4">Jemand bittet um ein Geheimnis</br>
+                        <small> Niemand außer dem Antragsteller kann diese Informationen einsehen.</small>
                     
                     </p>
                     <div class="mb-3">
@@ -80,8 +80,8 @@
                                 </div>
     
                                 <div v-show="url" style="margin-top: 20px;">
-                                    <h3 class="text-success">Success!</h3>
-                                    <p class="text-success">Send this URL back to the requester to share the secret.</p>
+                                    <h3 class="text-success">Erfolg!</h3>
+                                    <p class="text-success">Senden Sie diese URL an den Anfragenden zurück, um das Geheimnis zu teilen.</p>
                                     <urlcopy :url="url"/>
                                 </div>
                     </div>
@@ -102,15 +102,15 @@
                     <ol class="how-it-works" style="list-style-type: none; padding: 0; font-size: 16px; color: #555;">
                         <li style="display: flex; align-items: start; margin-bottom: 20px;">
                             <span style="display: inline-block; width: 30px; height: 30px; background-color: #FFA500; color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">1</span>
-                            Send the above link to someone you want to get a secret from.
+                            Senden Sie den obigen Link an jemanden, von dem Sie ein Geheimnis erfahren möchten.
                         </li>
                         <li style="display: flex; align-items: start; margin-bottom: 20px;">
                             <span style="display: inline-block; width: 30px; height: 30px; background-color: #FFA500; color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">2</span>
-                            They add their secret and share the URL Retriever generates.
+                            Sie fügen ihr Geheimnis hinzu und teilen die von Retriever generierte URL.
                         </li>
                         <li style="display: flex; align-items: start; margin-bottom: 20px;">
                             <span style="display: inline-block; width: 30px; height: 30px; background-color: #FFA500; color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">3</span>
-                            Only you can open that URL in the browser to see their secret. &#129668;
+                            Nur Sie können diese URL im Browser öffnen, um ihr Geheimnis zu sehen. &#129668;
                         </li>
                     </ol>
                 </div>
@@ -140,14 +140,11 @@
 
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
     <div class="col-md-4 d-flex align-items-center">
-        <a href="http://corgea.com"><img src="img/corgea_small.png" height="40"></a>&nbsp;
-        <span class="mb-3 mb-md-0 text-body-secondary">Part of the <a href="https://www.corgea.com" class="link-dark">Corgea</a> pack.</span>
-    </div>
-    <div class="text-left" style="padding:10px;">
-        <a href="why.html" class="btn btn-warning">Why We Built This</a>
+        <a href="http://corgea.com"><img src="img/medisoftware_small.png" height="40"></a>&nbsp;
+        <span class="mb-3 mb-md-0 text-body-secondary">Bereitgestellt von <a href="https://medisoftware.de/" class="link-dark">medisoftware</a>.</span>
     </div>
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" taget="_blank" href="https://github.com/Corgea/retriever">
+        <li class="ms-3"><a class="text-body-secondary" taget="_blank" href="https://github.com/elpatron68/retriever">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
             </svg>
