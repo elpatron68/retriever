@@ -1,6 +1,12 @@
-FROM nginx:alpine
+FROM caddy:latest
 
-COPY ./index.html /usr/share/nginx/html
-COPY ./style.css /usr/share/nginx/html
-COPY ./img /usr/share/nginx/html/img
-COPY ./js /usr/share/nginx/html/js
+COPY Caddyfile /etc/caddy/Caddyfile
+COPY ./index.html /var/www/html/index.html
+COPY ./style.css /var/www/html/style.css
+COPY ./img /var/www/html/img
+COPY ./js /var/www/html/js
+
+
+EXPOSE 80 443
+
+CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--adapter", "caddyfile"]
