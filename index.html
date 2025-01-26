@@ -44,7 +44,7 @@
         <h1 >Retriever</h1>
         <h3>Sicheres Abrufen von Geheimnissen</h3>
         <br>
-        <p class="lead mb-4">Mit Retriever können Sie Geheimnisse von jedermann <br> abfragen, ohne dass die Daten an einen Server übermittelt werden.</p>
+        <p class="lead mb-4">Mit Retriever kannst du Geheimnisse von jedermann <br> abfragen, ohne dass die Daten an einen Server übermittelt werden.</p>
         <div class="col-lg-6 mx-auto">
 
         <div class="card p-3">
@@ -52,12 +52,12 @@
     
     
                 <div v-if="newSecret">
-                    <p class="lead mb-4">Teilen Sie diese URL, um ein Geheimnis zu empfangen.</p>
+                    <p class="lead mb-4">Teile diese URL, um ein Geheimnis zu empfangen.</p>
                     <urlcopy :url="url"/>
                     
                 </div>
                 <div v-else-if="decryptSecret">
-                    <p class="lead mb-4" style="font-size: 16px; color: #777;">Unten finden Sie das entschlüsselte Geheimnis, das wir Ihnen mitgeteilt haben.</p>
+                    <p class="lead mb-4" style="font-size: 16px; color: #777;">Unten findest du das entschlüsselte Geheimnis, das wir dir mitgeteilt haben.</p>
                     <textarea class="form-control" id="dataForDecryption" rows="5"
                               v-model="inputData" disabled style="border-radius: 5px;"></textarea>
                 </div>
@@ -68,7 +68,7 @@
                     </p>
                     <div class="mb-3">
                         <textarea class="form-control" id="dataForEncryption" rows="5"
-                                  placeholder="Geben Sie ein, was Sie teilen möchten, und klicken Sie auf Verschlüsseln..." v-model="inputData"></textarea>
+                                  placeholder="Gib ein, was du teilen möchtest, und klicke Sie auf Verschlüsseln..." v-model="inputData"></textarea>
     
                                   <div class="encrypt-btn-container" style="margin-top: 20px;">
                                     <button type="submit" class="btn btn-warning" @click="encrypt" >
@@ -81,7 +81,7 @@
     
                                 <div v-show="url" style="margin-top: 20px;">
                                     <h3 class="text-success">Erfolg!</h3>
-                                    <p class="text-success">Senden Sie diese URL an den Anfragenden zurück, um das Geheimnis zu teilen.</p>
+                                    <p class="text-success">Sende diese URL an den Anfragenden zurück, um das Geheimnis zu teilen.</p>
                                     <urlcopy :url="url"/>
                                 </div>
                     </div>
@@ -102,7 +102,7 @@
                     <ol class="how-it-works" style="list-style-type: none; padding: 0; font-size: 16px; color: #555;">
                         <li style="display: flex; align-items: start; margin-bottom: 20px;">
                             <span style="display: inline-block; width: 30px; height: 30px; background-color: #FFA500; color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">1</span>
-                            Senden Sie den obigen Link an jemanden, von dem Sie ein Geheimnis erfahren möchten.
+                            Sende den obigen Link an jemanden, von dem du ein Geheimnis erfahren möchtest.
                         </li>
                         <li style="display: flex; align-items: start; margin-bottom: 20px;">
                             <span style="display: inline-block; width: 30px; height: 30px; background-color: #FFA500; color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">2</span>
@@ -110,7 +110,7 @@
                         </li>
                         <li style="display: flex; align-items: start; margin-bottom: 20px;">
                             <span style="display: inline-block; width: 30px; height: 30px; background-color: #FFA500; color: white; border-radius: 50%; text-align: center; line-height: 30px; margin-right: 10px;">3</span>
-                            Nur Sie können diese URL im Browser öffnen, um das Geheimnis zu sehen. &#129668;
+                            Nur du können diese URL im Browser öffnen, um das Geheimnis zu sehen. &#129668;
                         </li>
                     </ol>
                 </div>
